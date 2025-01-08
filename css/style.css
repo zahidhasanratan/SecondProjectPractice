@@ -17,15 +17,31 @@ h1{
 }
 #navbar{
     background-color: black;
+    padding-top: 23px;
 }
 .navbar_parent{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.navbar_parent .logo{
+    width: 10%;
+}
+.navbar_parent .menu{
+    width: 60%;
+    text-align: center;
+}
+.navbar_parent .nav_buttons{
+    width: 23%;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 18px;
+}
+
 .menu ul{
     display: flex;
     column-gap: 30px;
+    justify-content: center;
 }
 .menu ul li a{
     color: white;
@@ -33,4 +49,43 @@ h1{
     font-size: 16px;
     line-height: 24px;
     font-family: "Poppins",serif;
+    transition: all linear 0.3s;
 }
+.menu ul li a:hover{
+color: #289BDE;
+}
+
+
+.nav_buttons{
+    
+}
+.nav_buttons .nav_first_button{
+padding: 9px 15px;
+border: 1px solid #FFFFFF;
+border-radius: 5px;
+font-family: "Poppins",serif;
+font-size: 14px;
+font-weight: 4000;
+color: #FFFFFF;
+background-color: transparent;
+transition: all linear 0.3s;
+}
+.nav_buttons .nav_first_button:hover{
+background-color: #289BDE;
+}
+
+.nav_buttons .nav_second_button{
+    padding: 9px 48px;
+    border: 1px solid #289BDE;
+    border-radius: 5px;
+    font-family: "Poppins",serif;
+    font-size: 14px;
+    font-weight: 4000;
+    color: #FFFFFF;
+    background-color: #289BDE;
+    transition: all linear 0.3s;
+    }
+    .nav_buttons .nav_second_button:hover{
+     color: white;
+     background-color: transparent;   
+    }
