@@ -16,8 +16,13 @@ h1{
     margin: 0 auto;
 }
 #navbar{
-    background-color: black;
+  
     padding-top: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 .navbar_parent{
     display: flex;
@@ -89,3 +94,92 @@ background-color: #289BDE;
      color: white;
      background-color: transparent;   
     }
+
+/*Banner Started*/
+#banner{
+    padding-top: 277px;
+    padding-bottom: 350px;
+    background-color: #071B27;
+    position: relative;
+    z-index: 1;
+}
+#banner .banner_image{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#banner .banner_image img{
+    width: 100%;
+}
+.banner_content{
+    text-align: center;
+    color: white;
+}
+.banner_content h2{
+color: white;
+font-family: "Poppins",sans-serif;
+font-size: 30px;
+font-weight: 500;
+line-height: 45px;
+}
+.banner_content h1{
+color: white;
+font-family: "Poppins",sans-serif;
+font-size: 70px;
+font-weight: 700;
+line-height: 105px;
+padding: 0 150px;
+}
+
+#banner .banner_buttons{
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+}
+#banner .banner_buttons .banner_first_button{
+padding: 20px 30px;
+border: 1px solid #289BDE;
+border-radius: 5px;
+background-color: #289BDE;
+color: white;
+font-family: "Poppins",sans-serif;
+font-size: 20px;
+font-weight: normal;
+cursor: pointer;
+}
+#banner .banner_buttons .banner_second_button{
+padding: 20px 30px;
+border: 1px solid #fff;
+border-radius: 5px;
+background-color: transparent;
+color: white;
+font-family: "Poppins",sans-serif;
+font-size: 20px;
+font-weight: normal;
+transition: all linear 0.3s;
+cursor: pointer;
+}
+#banner .banner_buttons .banner_second_button:hover{
+padding: 20px 30px;
+border: 1px solid #289BDE;
+border-radius: 5px;
+background-color: #289BDE;
+color: white;
+font-family: "Poppins",sans-serif;
+font-size: 20px;
+font-weight: normal;
+}
+
+/*Banner Ended*/
+
+/*Banner Started*/
+
+/*Banner Ended*/
+
+/*Banner Started*/
+
+/*Banner Ended*/
